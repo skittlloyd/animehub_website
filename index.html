@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <title>AnimeHub</title>
+</head>
+<body>
+  <header>
+    <div class="menu-container">
+      <a href="#" class="menu-button" id="menu-button">
+        <span class="menu-dash"></span>
+        <span class="menu-dash"></span>
+        <span class="menu-dash"></span>
+      </a>
+      <div class="menu" id="menu">
+        <a href="site1/index.html" class="menu-item">Neon Genesis Evangelion</a>
+        <a href="site2/index.html" class="menu-item">Kaiju No. 8</a>
+        <a href="site3/index.html" class="menu-item">Assassination Classroom</a>
+        <a href="site4/index.html" class="menu-item">Attack on Titan</a>
+        <a href="site5/index.html" class="menu-item">Fullmetal Alchemist: Brotherhood</a>
+        <a href="site6/index.html" class="menu-item">Yowamushi Pedal</a>
+        <a href="site7/index.html" class="menu-item">My Dear Friend Nokotan</a>
+        <a href="site8/index.html" class="menu-item">Oshi no Ko</a>
+      </div>
+    </div>
+    <h1><span class="anime">Anime</span><span class="hub">Hub</span></h1>
+    <a href="aboutus/index.html" class="about-button">About Us</a>
+  </header>
+
+  <div class="container">
+    <a href="site1/index.html" target="_blank">
+      <img src="images/im1.jpeg" alt="Neon Genesis Evangelion">
+    </a>
+    <a href="site2/index.html" target="_blank">
+      <img src="images/im2.jpeg" alt="Kaiju No. 8">
+    </a>
+    <a href="site3/index.html" target="_blank">
+      <img src="images/im3.jpeg" alt="Assassination Classroom">
+    </a>
+    <a href="site4/index.html" target="_blank">
+      <img src="images/im4.jpeg" alt="Attack on Titan">
+    </a>
+    <a href="site5/index.html" target="_blank">
+      <img src="images/im5.jpeg" alt="Fullmetal Alchemist: Brotherhood">
+    </a>
+    <a href="site6/index.html" target="_blank">
+      <img src="images/im6.jpeg" alt="Yowamushi Pedal">
+    </a>
+    <a href="site7/index.html" target="_blank">
+      <img src="images/im7.jpeg" alt="My Dear Friend Nokotan">
+    </a>
+    <a href="site8/index.html" target="_blank">
+      <img src="images/im8.jpeg" alt="Oshi no Ko">
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-bottom">
+      <p>Copyright &copy; All Right Reserved | GROUP 5 | 2024</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-button').addEventListener('click', function(event) {
+      event.preventDefault();
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('visible');
+    });
+  </script>
+</body>
+</html>
