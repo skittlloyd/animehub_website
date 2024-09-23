@@ -1,0 +1,155 @@
+body {
+  background-color: #1B1B1B;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  position: relative; /* Keep relative for menu */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem; /* Responsive font size */
+  text-align: center;
+  flex-grow: 1;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+header .anime {
+  color: #fff;
+}
+
+header .hub {
+  background-color: #ffa31a;
+  color: #000;
+  border-radius: 2px;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.about-button {
+  background-color: #ffa31a;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.about-button:hover {
+  background-color: #d89e14;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-dash {
+  width: 24px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #292929;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px #808080;
+  padding: 10px;
+  z-index: 9;
+}
+
+.menu.visible {
+  display: block;
+}
+
+.menu-item {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #808080;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:hover {
+  background-color: #444;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.container a {
+  display: block;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #808080;
+}
+
+.footer-bottom {
+  background: #292929;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem; /* Smaller font for smaller screens */
+  }
+
+  .about-button {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: row; /* Maintain horizontal layout */
+    justify-content: space-between; /* Keep space between elements */
+  }
+
+  .about-button {
+    margin-left: 10px; /* Space between elements */
+  }
+}
