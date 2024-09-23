@@ -1,0 +1,50 @@
+body {
+  background-color: #1B1B1B;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Default text color */
+}
+
+header {
+  text-align: center;
+  padding: 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header .anime {
+  color: #fff;
+}
+
+header .hub {
+  background-color: #ffa31a;
+  color: #000;
+  border-radius: 2px;
+}
+
+.aboutus {
+  background: #292929;
+  color: #fff;
+  padding: 20px;
+  margin: 40px auto; /* Center the box */
+  max-width: 800px; /* Set a maximum width */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px #8080; /* Subtle shadow */
+}
+
+.aboutus h1 {
+  margin-top: 0;
+}
+
+.aboutus ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aboutus ul li {
+  margin-bottom: 10px;
+}
