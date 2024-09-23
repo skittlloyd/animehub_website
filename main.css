@@ -11,6 +11,7 @@ header {
   align-items: center;
   padding: 16px;
   flex-wrap: nowrap; /* Prevent wrapping */
+  position: relative; /* Keep relative for menu */
 }
 
 header h1 {
@@ -70,9 +71,9 @@ header .hub {
 .menu {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%; /* Full width on mobile */
+  top: 40px;
+  left: 10px;
+  width: 200px;
   max-height: 200px;
   overflow-y: auto;
   background-color: #292929;
@@ -128,6 +129,7 @@ header .hub {
   color: #fff;
   text-align: center;
   padding: 10px;
+  position: relative;
 }
 
 /* Responsive adjustments */
@@ -139,10 +141,6 @@ header .hub {
   .about-button {
     padding: 8px 16px; /* Adjust padding for smaller screens */
   }
-
-  .menu {
-    width: 100%; /* Full width on smaller screens */
-  }
 }
 
 @media (max-width: 480px) {
@@ -153,9 +151,5 @@ header .hub {
 
   .about-button {
     margin-left: 10px; /* Space between elements */
-  }
-
-  header h1 {
-    font-size: 1.5rem; /* Adjust title size for mobile */
   }
 }
